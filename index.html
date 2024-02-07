@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Schlenz</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="./bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="./landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="./font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./css" rel="stylesheet" type="text/css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Ryan Schlenz</h1>
+                        <h3>Cloud Engineer</h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a href="https://github.com/RyanSchlenz" target="_blank" class="btn btn-default btn-lg"><i class="fab fa-github"></i> <span class="network-name">GitHub</span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/ryan-schlenz/" target="_blank" class="btn btn-default btn-lg"><i class="fab fa-linkedin"></i>
+                                    <span class="network-name">LinkedIn</span></a>
+                            </li>
+                            <li>
+                                <a href="https://docs.google.com/document/d/1v-57dKMS7phM1DgJjguBe57AOZNgERhqm_KT_nzGLT0/edit?usp=sharing" target="_blank" class="btn btn-default btn-lg"><i class="fas fa-file-alt"></i>
+                                </i> <span class="network-name">Resume</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Project Section Container -->
+    <div id="project-section-container">
+        <!-- Projects Header -->
+        <h1>Projects</h1>
+    </div>
+
+    <!-- Link the JavaScript file -->
+    <script src="projectSection.js"></script>
+
+    <!-- JavaScript code to create project sections -->
+    <script>
+        // Call createProjectSection function to generate project sections
+        const projectSectionContainer = document.getElementById('project-section-container');
+        
+        // Project 1
+        const projectSection1 = createProjectSection(
+            'LogFusion-Monitor',
+            'https://github.com/RyanSchlenz/json_log_reading.py',
+            'These modules and the main script work together to process JSON log files, perform data comparisons, and monitor log file changes, all while logging activities and errors.',
+            './Log_fusion.webp',
+            false
+        );
+        projectSectionContainer.appendChild(projectSection1);
+
+        // Project 2
+        const projectSection2 = createProjectSection(
+             'JSON Log Reading',
+            'https://github.com/RyanSchlenz/json_log_reading.py',
+            'This project was used to compare JSON logs to find matches, then see if there is a match in a CSV file based on IP addresses.',
+            './Json_photo.jpeg',
+            true
+        );
+        projectSectionContainer.appendChild(projectSection2);
+
+        // Project 3
+        const projectSection3 = createProjectSection(
+            'IAM Auto Mastermind',
+            'https://github.com/RyanSchlenz/IAM_Create_User',
+            'The script creates a Python function called create_iam_user that automates the process of setting up an IAM (Identity and Access Management) user in AWS and setting permissions.',
+            './Mastermind photo.jpeg',
+            false
+        );
+        projectSectionContainer.appendChild(projectSection3);
+        
+        // Project 4
+        const projectSection4 = createProjectSection(
+            'Automatic Log Reader',
+            'https://github.com/RyanSchlenz/AutomatingLogReading',
+            'Using Python to automate reading data logs to detect specific patterns in structured or unstructured data.',
+            './Auto_log.avif',
+            true
+        );
+        projectSectionContainer.appendChild(projectSection4);
+        
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Add footer content here if needed -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="./jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./bootstrap.min.js"></script>
+</body>
+</html>
