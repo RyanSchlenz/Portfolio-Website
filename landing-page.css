@@ -164,10 +164,21 @@ h6 {
       padding-bottom: 50px;
       text-align: center;
       color: #f8f8f8;
-      background: url(../img/the-bridge.jpg) no-repeat center center;
+      background: url(./background1.jpg) no-repeat center center;
       background-size: cover;
   }
 }
+
+@media(max-width:300px) {
+  .intro-header {
+      padding-bottom: 50px;
+      text-align: center;
+      color: #f8f8f8;
+      background: url(./background1.jpg) no-repeat center center;
+      background-size: cover;
+  }
+}
+
 @media(max-width:767px) {
     .banner h2 {
         margin: 0;
